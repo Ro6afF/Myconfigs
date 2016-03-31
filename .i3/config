@@ -210,3 +210,4 @@ bindsym XF86AudioRaiseVolume exec pamixer --allow-boost -i 5
 bindsym XF86AudioLowerVolume exec pamixer -d 5
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20
+exec setxkbmap "us+bg(phonetic):2+group(alt_shift_toggle)"
