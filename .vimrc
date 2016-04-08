@@ -40,7 +40,7 @@ syntax enable
 if filereadable("Makefile")
 setlocal makeprg=make
 else
-autocmd FileType c          setlocal makeprg=clang\ '%'\ -o\ '%:r'.exe\ -std=gnu1z
+autocmd FileType c          setlocal makeprg=clang\ '%'\ -o\ '%:r'.exe\ -std=gnu11
 autocmd FileType cs         setlocal makeprg=mcs\ '%'
 autocmd FileType cpp        setlocal makeprg=clang++\ '%'\ -o\ '%:r'.exe\ -std=gnu++1z
 autocmd FileType haskell    setlocal makeprg=ghc\ --make\ '%' shellpipe=2> expandtab
