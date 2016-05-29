@@ -1,14 +1,14 @@
 urxvt.termName:                   rxvt-256color
 
 urxvt.depth:                      32
-urxvt.background:                 rgba:0000/0000/0000/7777
+urxvt.background:                 rgba:0000/0000/0000/eeee
 urxvt.foreground:                 rgb:ffff/ffff/ffff/ffff
-urxvt.font:                       xft:monospace:size=10
+urxvt.font:                       xft:monospace:size=13.5
 urxvt.keysym.Home:                \033[1~
 urxvt.keysym.End:                 \033[4~
 urxvt.cursorBlink:                true
 urxvt.scrollBar_right:            true
-urxvt.transparent:                true
+urxvt.transparent:                false
 urxvt.shading:                    90
 urxvt.iso14755:                   False
 #urxvt.perl-ext-common:            tabbed,tabbedex

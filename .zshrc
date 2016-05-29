@@ -1,5 +1,5 @@
 VERSION=`uname --kernel-release`
-#figlet -w 0 "${${${${${VERSION%?}%?}%?}%?}%?}"
+figlet -w 0 "${${${${${VERSION%?}%?}%?}%?}%?}"
 # Enable colors for ls, etc.  Prefer ~/.dir_colors #64489
 if [[ -f ~/.dir_colors ]] ; then
 	eval $(dircolors -b ~/.dir_colors)
@@ -218,4 +218,5 @@ alias rd='rm -rf'
 ## completion in the middle of a line
 ##bindkey '^i' expand-or-complete-prefix
 #xscreensaver & > /dev/null
-archey3
+#archey3
+alias lol='figlet LLLLLLLLLLLLLLLLLLLLLOOOOOOOOOOOOOOOOOOOOOOOOOOLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLOLOLOLLOLOLOLOLOLOLOLOLOLOLOLOL'
