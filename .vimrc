@@ -176,4 +176,3 @@ highlight Cursor ctermbg=NONE
 
 " color jellybeans
 " let g:jellybeans_background_color_256='NONE'
-
