@@ -181,11 +181,11 @@ bar {
 #exec i3-config-wizard
 
 #Mine executions
-exec setxkbmap "us+bg(phonetic):2+group(alt_shift_toggle)"
+exec setxkbmap "us+bg(phonetic):2+se:3+group(alt_shift_toggle)"
 exec pamixer -u
 exec nm-applet
 exec xscreensaver
-exec compton 
+#exec compton 
 
 #Mine keybindings
 bindsym XF86AudioRaiseVolume exec pamixer --allow-boost -i 5

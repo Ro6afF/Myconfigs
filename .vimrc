@@ -42,7 +42,7 @@ setlocal makeprg=make
 else
 autocmd FileType c          setlocal makeprg=clang\ '%'\ -o\ '%:r'.exe\ -std=gnu11
 autocmd FileType cs         setlocal makeprg=mcs\ '%'
-autocmd FileType cpp        setlocal makeprg=clang++\ '%'\ -o\ '%:r'.exe\ -std=gnu++1z
+autocmd FileType cpp        setlocal makeprg=clang++\ '%'\ -o\ '%:r'.exe\ -std=gnu++1z\ -lSDL2\ -lpthread
 autocmd FileType haskell    setlocal makeprg=ghc\ --make\ '%' shellpipe=2> expandtab
 autocmd FileType cabal      setlocal expandtab
 autocmd FileType python     setlocal makeprg=python\ '%'
@@ -66,14 +66,14 @@ set errorformat+=%+C\ \ %#%m
 set errorformat+=%W%>%f:%l:%c:
 set errorformat+=%+C\ \ %#%tarning:\ %m
 
-nmap <F8> :w<CR>:make -O3<CR><CR>
-nmap <F9> :w<CR>:make -O2<CR><CR>
+nmap <F8> :w<CR>:make -O3<CR>
+nmap <F9> :w<CR>:make -O2<CR>
 nmap <F10> :!'%:p:r'.exe<CR>
 nmap <C-F10> :w<CR>:!'%:p'<CR>
-nmap <F12> :w<CR>:!ghci %<CR><CR>
-nmap <C-F12> :w<CR>:!ghci<CR><CR>
+nmap <F12> :w<CR>:!ghci %<CR>
+nmap <C-F12> :w<CR>:!ghci<CR>
 nmap <C-D> :sh<CR>
-nmap <F11> :!astyle --style=allman '%' && rm '%'.orig<CR>
+nmap <F11> :w<CR>:!cp ~/.clang-format . && clang-format '%' > '%'.tmpasdcc && rm .clang-format && mv '%'.tmpasdcc '%'<CR>
 
 let mapleader='\'
 nmap <Leader>q :q<CR>
